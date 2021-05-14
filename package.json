@@ -1,5 +1,5 @@
 {
-  "name": "my-vue-app",
+  "name": "vite_react_ts_mobx_antd",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --mode dev",
