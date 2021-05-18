@@ -6,8 +6,14 @@ class DemoStore{
   }
 
   num=0;
-  addNum=()=>{
+  
+  addNum = () => {
     this.num++;
+  }
+
+  count=0;
+  addCount = () => {
+    this.count++;
   }
 }
 
