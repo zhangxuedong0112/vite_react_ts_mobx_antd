@@ -16,7 +16,7 @@ const Home:React.FC = (props)=>{
     <Divider />
 
     <DuohangtxtDemo />
-    
+
   </>
 }
 

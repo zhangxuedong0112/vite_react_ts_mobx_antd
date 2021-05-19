@@ -11,7 +11,7 @@ const DuohangTxtDemo:React.FC = (props:any)=>{
 
     ctx.font = "14px Arial";
     if(font){
-      ctx.font  
+      ctx.font = font; 
     }
     
     return ctx.measureText(txt).width;
