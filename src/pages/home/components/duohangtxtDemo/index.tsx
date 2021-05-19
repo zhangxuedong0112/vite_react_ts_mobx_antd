@@ -8,7 +8,7 @@ const DuohangTxtDemo:React.FC = (props:any)=>{
     let c:any = document.createElement("canvas");
     let ctx = c.getContext("2d");
 
-    ctx.font = "12px Arial";
+    ctx.font = "14px Arial";
     if(font){
       ctx.font  
     }
@@ -16,7 +16,7 @@ const DuohangTxtDemo:React.FC = (props:any)=>{
     return ctx.measureText(txt).width;
   }, []);
 
-  let subTxtByBoxWidthAndFont = (txt:string, boxWidth:any, lineNum:any, font?:string)=>{
+  let subTxtByBoxWidthAndFont = useCallback((txt:string, boxWidth:any, lineNum:any, font?:string)=>{
     let txtWidth = getTxtWidth(txt, font);
     let scaleWidth = txtWidth/(boxWidth*lineNum);
     if(scaleWidth < 1)return txt;
@@ -25,9 +25,9 @@ const DuohangTxtDemo:React.FC = (props:any)=>{
 
     txt = txt.substr(0, parseInt(subIndex));
     console.log(txtWidth, scaleWidth)
-    
+
     return txt;
-  }
+  }, [])
 
   return <div className="txtBox">
     {/* {getTxtWidth(txt)} */}
