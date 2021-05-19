@@ -31,7 +31,7 @@ const DuohangTxtDemo:React.FC = (props:any)=>{
     let subIndex:any = txt.length/scaleWidth;
 
     txt = txt.substr(0, parseInt(subIndex));
-    console.log(txtWidth, scaleWidth)
+    // console.log(txtWidth, scaleWidth)
 
     return txt;
   }, [])
