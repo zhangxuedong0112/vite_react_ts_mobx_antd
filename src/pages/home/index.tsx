@@ -1,6 +1,7 @@
 import React from "react";
 import MobxDemo from "./components/mobxDemo";
 import ReqDemo from "./components/reqDemo";
+import DuohangtxtDemo from "./components/duohangtxtDemo";
 import { Button, Divider } from "antd";
 
 const Home:React.FC = (props)=>{
@@ -11,9 +12,11 @@ const Home:React.FC = (props)=>{
     <Divider />
 
     <ReqDemo />
+
     <Divider />
 
-
+    <DuohangtxtDemo />
+    
   </>
 }
 
