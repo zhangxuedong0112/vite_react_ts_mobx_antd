@@ -14,7 +14,10 @@ const DuohangTxtDemo:React.FC = (props:any)=>{
       ctx.font = font; 
     }
     
-    return ctx.measureText(txt).width;
+    let width = ctx.measureText(txt).width;
+
+    c = null;
+    return width
   }, []);
 
   /* 截取文本 */
